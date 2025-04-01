@@ -1,8 +1,10 @@
 import axios from 'axios'
 
+const HOST = import.meta.env.VITE_PRODUCTION;
+
 export async function fetchPeople() {
     try {
-        const response = await axios.get('http://localhost:5000/api/friends');
+        const response = await axios.get(`${HOST}`);
 
         if (response.status === 200) {
             return response.data
@@ -14,7 +16,7 @@ export async function fetchPeople() {
 
 export async function postPeople(newPerson) {
   try {
-    const response = await axios.post('http://localhost:5000/api/friends', newPerson);
+    const response = await axios.post(`${HOST}`, newPerson);
     if (response.status === 200) {
       return response.data;
     }
@@ -26,7 +28,7 @@ export async function postPeople(newPerson) {
 
 export async function updatePeople(id, updatedData) {
   try {
-    const response = await axios.patch(`http://localhost:5000/api/friends/${id}`, updatedData);
+    const response = await axios.patch(`${HOST}/${id}`, updatedData);
     if (response.status === 200) {
       return response.data;
     }
@@ -37,7 +39,7 @@ export async function updatePeople(id, updatedData) {
 
 export async function deletePeople(id) {
   try {
-    const response = await axios.delete(`http://localhost:5000/api/friends/${id}`);
+    const response = await axios.delete(`${HOST}/${id}`);
     if (response.status === 200) {
       return response.data;
     }
