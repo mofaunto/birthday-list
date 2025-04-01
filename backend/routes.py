@@ -20,8 +20,9 @@ def post_friends():
 
         required_fields = ["name", "role", "description", "gender", "birthday"]
         for field in required_fields:
-            if field not in data or not data.field():
+            if field not in data or not data.get(field):
                 return jsonify({"error": f'Missing required field: {field}'}), 400
+
 
         name = data.get("name")
         role = data.get("role")
