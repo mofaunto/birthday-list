@@ -25,7 +25,7 @@ const Navbar = () => {
                 bg={useColorModeValue("gray.200", "gray.700")}
             >
                 <Flex
-                    h={"16"}
+                    h={"20"}
                     alignItems={"center"}
                     justifyContent={"space-between"}
                 >

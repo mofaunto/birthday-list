@@ -14,9 +14,9 @@ function App() {
                     textAlign={"center"}
                     mb={8}
                     textTransform={"uppercase"}
-                    fontSize={{ base: "3xl", md: "50" }}
+                    fontSize={{ base: "xl", md: "32" }}
                 >
-                    Upcoming
+                    Friends
                 </Text>
 
                 <FriendsGrid />

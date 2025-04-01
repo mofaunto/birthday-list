@@ -1,3 +1,11 @@
 .react-datepicker-wrapper {
     width: 100%;
 }
+
+.react-datepicker__month-select {
+    background-color: white;
+}
+
+.react-datepicker__year-select {
+    background-color: white;
+}
