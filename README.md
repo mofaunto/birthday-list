@@ -2,7 +2,7 @@
 
 Built as the practice for creating apis with Python / Flask and connecting it directly with the frontend
 
-The project can be viewed through: ___
+The project can be viewed through: https://birthday-list-sdbl.onrender.com
 
 ## Tech Stack:
 
